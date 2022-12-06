@@ -36,7 +36,7 @@ let box = [
             } else {
                 console.log (`Мисс Марпл: ${box[i]}`)
             }
-        }
+        };
 
  ```
 
