@@ -38,7 +38,8 @@ let box = [
 
 
 ***
- ## Education and courses:
+
+## Education and courses:
  * JavaScript Manual on learnjavascript.ru (in progress)
  * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
  * JavaScript  book https://learn.javascript.ru/
