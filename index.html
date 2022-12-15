@@ -26,19 +26,19 @@
                 <nav class="nav">
                    <ul class="navigation">
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">About me</a>
+                        <a class="navigation__link" href="#about-me">About me</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">Education</a>
+                        <a class="navigation__link" href="#education">Education</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">Skills</a>
+                        <a class="navigation__link" href="#technical-skills">Skills</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">Work experience</a>
+                        <a class="navigation__link" href="#experience">Work experience</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="">Code</a>
+                        <a class="navigation__link" href="#code">Code</a>
                     </li>
                    </ul>
                 </nav>
@@ -51,14 +51,14 @@
     <!-- MAIN -->
 
     <main>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="container about-me__container">
                 <div class="left-side">
                     <img class="my-photo" src="./assets/img/avatar.jpg" alt="Avatar">
                 </div>
-                <div class="right-side">
+                <div class="right-side about-me__right-side">
                     <h2 class="heading">
-                        CONTACT
+                        CONTACTS
                     </h2>
                     <ul class="about-me__list">
                         <li class="about-me__item">
@@ -75,11 +75,130 @@
                         I am a graduate of the Academy of Construction and Architecture. My specialty is a design engineer and now I am a novice Front-End developer.
                     </p>
                     <p class="about-me__text">
-                        My main qualities are the ability to work in a team and the ability to learn quickly. Also at the moment I am actively learning to use Figma, NodeJS, Vs Code.
+                        My main qualities are the ability to work in a team and the ability to learn quickly. Also at the moment I am actively learning to use Figma, NodeJS, VS Code.
                     </p>
                 </div>
             </div>
         </section>
+        
+        <section class="details">
+            <div class="container details__container">
+                <div class="left-side details__left-side">
+                    <div class="education" id="education">
+                         <h2 class="heading">EDUCATION</h2>
+                         <ul class="education__list">
+                             <li class="education__item">
+                                 Academy of Architecture
+                             </li>
+                             <li class="education__item">
+                             Bachelor's degree - Design Engineer
+                             </li>
+                             <li class="education__item">
+                                 2018-2022
+                             </li>
+                             <li class="education__item education__item-english">
+                                English level: <br> Pre-Intermediate (A2)
+                             </li>
+                         </ul>
+                    </div>
+                    <div class="technical-skills" id="technical-skills">
+                        <h2 class="heading" >
+                            TECHNICAL SKILLS
+                        </h2>
+                        <ul class="technical-skills__list">
+                            <li class="technical-skills__item">
+                                HTML, CSS
+                            </li>
+                            <li class="technical-skills__item">
+                                JavaScript
+                            </li>
+                            <li class="technical-skills__item">
+                                NodeJs
+                            </li>
+                            <li class="technical-skills__item">
+                                VS Code
+                            </li>
+                            <li class="technical-skills__item">
+                                Git
+                            </li>
+                            <li class="technical-skills__item">
+                                Figma
+                            </li>
+                        </ul>
+                    </div>
+                   <div class="soft-skills" id="soft-skills">
+                       <h2 class="heading" >
+                           SOFT SKILLS
+                       </h2>
+                       <ul class="soft-skills__list">
+                           <li class="soft-skills__item">
+                            Good Communication
+                           </li>
+                           <li class="soft-skills__item">
+                            Creativity
+                           </li>
+                           <li class="soft-skills__item">
+                            Team player
+                           </li>
+                           <li class="soft-skills__item">
+                            Details oriented
+                           </li>
+                       </ul>
+                   </div>
+            </div>
+            <div class="right-side">
+                <div class="experience" id="experience">
+                    <h2 class="heading">
+                        WORK EXPERIENCE
+                    </h2>
+                    <p class="experience__text">
+                        Unfortunately, I have no experience as a frontend developer. Nevertheless, I am confident that I can cope with the tasks: I already have some skills, others I will master in practice. I also have several projects, links to which are presented below:
+                    </p>
+                    <ul class="experience__list">
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://diegokitty.github.io/Lagoona/">1) Lagoona</a>
+                        </li>
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://diegokitty.github.io/Evklid/">2) Evklid</a>
+                        </li>
+                        <li class="experience__item">
+                            <a class="experience__link" href="https://github.com/DiegoKitty/rsschool-cv">3) CV</a>
+                        </li>
+                    </ul>
+                    <p class="experience__text">
+                        Since December 5, I started studying at the course "JS/Frontend development" at RS School, I am ready to gain new knowledge, improve and gain experience.
+                    </p>
+                </div>
+                <div class="code" id="code">
+                    <h2 class="heading">
+                        CODE EXAMPLE
+                    </h2>
+                    <pre class="code__example">
+                        function solveEquation(a, b, c) {
+                            let arr = [];
+                            let x1;
+                            let x2;
+                            let d = b ** 2 - 4 * a * c;
+                            if (d < 0) {
+                              arr = [];
+                            } else if (d === 0) {
+                              x1 = -b / (2 * a);
+                              arr = [x1];
+                            } else if (d > 0) {
+                              x1 = (-b + Math.sqrt(d) ) / ( 2 * a);
+                              x2 = (-b - Math.sqrt(d) ) / ( 2 * a);
+                              arr = [x1,x2];
+                            }
+                            
+                            return arr; // array
+                          }
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     </main>
 
